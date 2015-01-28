@@ -6,28 +6,40 @@
   <title>HKS Data Board</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <style>
-  body, html{
-  	margin: 0;
-  	padding: 0;
-  	font-family: 'Open Sans'
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans'
   }
-  .header{
-  	background-color: #000;
-  	height: 20px;
-  	z-index: 1000;
-  	position: fixed;
-  	width: 100%;
-  	padding: 15px 50px 8px;
-  	overflow: visible;
+  body {
+    margin-top: 40px
   }
-  .header img{
-  	z-index: 900
+  a {
+    text-decoration: none;
+    color: #a55
+  }
+  a:hover {
+    color: #a00
+  }
+  .header {
+    background-color: #000;
+    height: 20px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    padding: 15px 50px 8px;
+    overflow: visible;
+    top: 0;
+  }
+  .header img {
+    z-index: 900
   }
   .sidebar {
     position: fixed;
     top: 40px;
     width: 20%;
-    box-sizing :border-box;
+    box-sizing: border-box;
     bottom: 0;
     left: 0;
     z-index: 800;
@@ -39,27 +51,103 @@
     border-right: solid 1px #ccc;
     padding: 20px;
   }
-  .logo{
-		width: 100%;
-		margin-top: 20px
+  .logo {
+    width: 100%;
+    margin-top: 20px
   }
-  h1{
-  	text-align: center;
-  	display: block;
-  	padding-bottom: 10px;
-  	border-bottom: solid 1px #eee;
-  	font-size: 25px
+  h1 {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #eee;
+    font-size: 25px
   }
+  .main {
+    margin-left: 20%;
+  }
+  .title {
+    padding: 15px;
+    border-bottom: solid 1px #eee;
+    border-top: solid 1px #eee;
+  }
+  .title h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .pull-right {
+    float: right;
+  }
+  .title p {
+    color: #aaa;
+    font-size: 14px
+  }
+  .thumbnail {
+    width: 25%;
+    padding: 20px;
+    border: solid 1px #eee;
+    margin: 10px;
+    height: 100px;
+    box-sizing: margin-box;
+    float: left;
+  }
+  .thumbnail .pull-right{
+  	font-size: 14px
+  }
+  .thumbnail h4{
+  	margin: 0;
+  	padding: 0;
+  }
+    .thumbnail a{
+    	font-size: 14px
+    }
   </style>
 </head>
 
 <body>
-	<div class="header">
-		<img src="http://epod.cid.harvard.edu/profiles/openscholar/themes/hwpi_basetheme/images/harvard-logo.png" alt="">
-	</div>
+  <div class="header">
+    <img src="http://epod.cid.harvard.edu/profiles/openscholar/themes/hwpi_basetheme/images/harvard-logo.png" alt="">
+  </div>
   <div class="sidebar">
-		<img class="logo" src="http://static.projects.iq.harvard.edu/files/styles/os_files_medium/public/epod/files/cid_epod_1.png?itok=36imbny_" alt="">
-		<h1>Data Board</h1>
+    <img class="logo" src="http://static.projects.iq.harvard.edu/files/styles/os_files_medium/public/epod/files/cid_epod_1.png?itok=36imbny_" alt="">
+    <h1>Data Board</h1>
+  </div>
+  <div class="main">
+
+
+
+  	<!-- Folder Name -->
+    <div class="title">
+      <div class="pull-right" style="margin-top:5px">
+        <a href="#">Downlaod All CSV</a> | <a href="#">DOWNLOAD all json</a>
+      </div>
+      <h3>MGNREGA Region List</h3>
+      <p>Lorem ipsum description</p>
+    </div>
+    <!-- File List -->
+    <div class="thumbnail">
+    	<h4>STATES 0809</h4> 
+    	<div style="margin-top:15px">
+        <a href="#">CSV</a> | <a href="#">JSON</a>
+      </div>
+    </div>
+    <div class="thumbnail">
+    	<h4>STATES 0809</h4> 
+    	<div style="margin-top:15px">
+        <a href="#">CSV</a> | <a href="#">JSON</a>
+      </div>
+    </div>
+    <div class="thumbnail">
+    	<h4>STATES 0809</h4> 
+    	<div style="margin-top:15px">
+        <a href="#">CSV</a> | <a href="#">JSON</a>
+      </div>
+    </div>
+
+
+
+
+
+
   </div>
 </body>
 
