@@ -68,6 +68,7 @@
     padding: 15px;
     border-bottom: solid 1px #eee;
     border-top: solid 1px #eee;
+    background-color: #fafafa
   }
   .title h3 {
     margin: 0;
@@ -125,8 +126,6 @@
       <li>
         <a href="#nregalist">NREGA REGION List</a>
       </li>
-      <li><a href="#nregalis">NREGA REGION List 2</a>
-      </li>
       <li></li>
       <li></li>
     </ul>
@@ -134,17 +133,27 @@
   <div class="main">
 
 
+		<!-- 
+			Read the filem system and repeat the below section for all the folders
+			Folder Name will act as grouping like NREGA REGION list
+			loop through files for thumnail
+
+
+
+		 -->
 
     <!-- Folder Name -->
     <div class="title" id="nregalist">
       <div class="pull-right" style="margin-top:5px">
         <a href="#">Downlaod All CSV</a> | <a href="#">DOWNLOAD all json</a>
       </div>
+      <!-- This title is folder name -->
       <h3>MGNREGA Region List</h3>
       <p>Lorem ipsum description</p>
     </div>
     <!-- File List -->
     <div class="thumbnail">
+    	<!-- this title is file name in that folder -->
       <h4>STATES 0809</h4>
       <div style="margin-top:15px">
         <a href="#">CSV</a> | <a href="#">JSON</a>
@@ -162,8 +171,22 @@
         <a href="#">CSV</a> | <a href="#">JSON</a>
       </div>
     </div>
+    <div class="thumbnail">
+      <h4>STATES 0809</h4>
+      <div style="margin-top:15px">
+        <a href="#">CSV</a> | <a href="#">JSON</a>
+      </div>
+    </div>
+    <div style="clear:both"></div>
 
-    <!-- Folder Name -->
+		<!-- Looping ends here -->
+
+
+
+
+
+    <!--  THis is just a Placeholder Data delete it once dynamic
+     : Folder Name -->
     <div class="title" id="nregalis">
       <div class="pull-right" style="margin-top:5px">
         <a href="#">Downlaod All CSV</a> | <a href="#">DOWNLOAD all json</a>
@@ -190,6 +213,7 @@
         <a href="#">CSV</a> | <a href="#">JSON</a>
       </div>
     </div>
+    <div style="clear:both"></div>
 
 
 
