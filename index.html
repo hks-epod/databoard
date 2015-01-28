@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HKS Data Board</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <style>
+  body, html{
+  	margin: 0;
+  	padding: 0;
+  	font-family: 'Open Sans'
+  }
+  .header{
+  	background-color: #000;
+  	height: 20px;
+  	z-index: 1000;
+  	position: fixed;
+  	width: 100%;
+  	padding: 15px 50px 8px;
+  	overflow: visible;
+  }
+  .header img{
+  	z-index: 900
+  }
+  .sidebar {
+    position: fixed;
+    top: 40px;
+    width: 20%;
+    box-sizing :border-box;
+    bottom: 0;
+    left: 0;
+    z-index: 800;
+    display: block;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fafafa;
+    border-right: solid 1px #ccc;
+    padding: 20px;
+  }
+  .logo{
+		width: 100%;
+		margin-top: 20px
+  }
+  h1{
+  	text-align: center;
+  	display: block;
+  	padding-bottom: 10px;
+  	border-bottom: solid 1px #eee;
+  	font-size: 25px
+  }
+  </style>
+</head>
+
+<body>
+	<div class="header">
+		<img src="http://epod.cid.harvard.edu/profiles/openscholar/themes/hwpi_basetheme/images/harvard-logo.png" alt="">
+	</div>
+  <div class="sidebar">
+		<img class="logo" src="http://static.projects.iq.harvard.edu/files/styles/os_files_medium/public/epod/files/cid_epod_1.png?itok=36imbny_" alt="">
+		<h1>Data Board</h1>
+  </div>
+</body>
+
+</html>
